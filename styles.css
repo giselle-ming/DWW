@@ -285,13 +285,13 @@ footer {
 
 .footer-column {
   width: 100%;
-  max-width: 500px;
+  max-width: 450px;
   color: #ffffff;
   margin-bottom: 20px;
 }
 
 .footer-column img {
-  width: 200px;
+  width: 100px;
   margin-bottom: 30px;
   display: block;
 }
@@ -357,7 +357,7 @@ footer {
   }
 
   .hero img {
-    width: 200px;
+    width: 150px;
   }
 
   .program-card,
