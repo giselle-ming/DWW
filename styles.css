@@ -4,6 +4,13 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: 'title';
+  src: url('fonts/Shojumaru-Regular.ttf') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   font-family: Arial, sans-serif;
   min-height: 100vh;
@@ -25,8 +32,9 @@ header {
 
 header h1 {
   color: white;
-  font-size: 28px;
+  font-size: 30px;
   margin: 0;
+  font-family: "title";
 }
 
 nav {
@@ -82,9 +90,14 @@ nav {
 }
 
 .hero p {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 500;
   padding: 16px 100px;
+}
+
+.hero h2 {
+  font-family: 'title';
+  font-size: 24px;
 }
 
 /* PROGRAMS SECTION */
@@ -114,6 +127,7 @@ nav {
 }
 
 .programs h2 {
+  font-family: 'title';
   font-size: 36px;
   color: #0099cc;
 }
@@ -129,6 +143,7 @@ nav {
   font-size: 24px;
   margin: 10px 0;
   text-align: center;
+  font-family: 'title';
 }
 
 .program-card p {
@@ -161,6 +176,7 @@ nav {
 .features h2 {
   font-size: 36px;
   color: #0099cc;
+  font-family: 'title';
 }
 
 .features h3 {
@@ -222,6 +238,7 @@ nav {
   font-size: 36px;
   color: #0099cc;
   padding-bottom: 10px;
+  font-family: 'title';
 }
 
 .schedule-pricing h3 {
