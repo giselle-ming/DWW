@@ -35,9 +35,7 @@ window.onload = function () {
 
   // Scroll to the schedule section when clicking the button
   viewScheduleBtn.onclick = function () {
-    document
-      .getElementById("holiday-schedule-container")
-      .scrollIntoView({ behavior: "smooth" });
+    document.getElementById("schedule").scrollIntoView({ behavior: "smooth" });
     modal.style.display = "none";
   };
 };
