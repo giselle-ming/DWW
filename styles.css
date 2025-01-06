@@ -149,6 +149,51 @@
   font-style: normal;
 }
 
+.hero-carousel {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.carousel-container {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+  min-width: 100%;
+  text-align: center;
+  padding: 20px;
+}
+
+.carousel-slide img {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.carousel-btn.prev {
+  left: 10px;
+}
+
+.carousel-btn.next {
+  right: 10px;
+}
+
 body {
   font-family: Arial, sans-serif;
   min-height: 100vh;
@@ -212,8 +257,8 @@ nav {
 
 /* HERO SECTION */
 .hero {
-  background-image: linear-gradient(to bottom, rgba(0, 6, 46, 0.668), rgba(0, 0, 0, 0.755)), url('/images/swimmer.jpg');
-  height: 60vh;
+  background-image: linear-gradient(to bottom, rgba(0, 6, 46, 0.668), rgba(0, 0, 0, 0.755)), url('/images/practice.png');
+  height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
