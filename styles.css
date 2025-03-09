@@ -257,7 +257,7 @@ nav {
 
 /* HERO SECTION */
 .hero {
-  background-image: linear-gradient(to bottom, rgba(0, 6, 46, 0.668), rgba(0, 0, 0, 0.755)), url('/images/practice.png');
+  background-image: linear-gradient(to bottom, rgba(0, 6, 46, 0.668), rgba(0, 0, 0, 0.755)), url('/images/DSC_9333.JPG');
   height: 80vh;
   display: flex;
   justify-content: center;
@@ -265,6 +265,21 @@ nav {
   text-align: center;
   background-size: cover;
   color: #fff;
+}
+
+.hero-gallery {
+  background-image: linear-gradient(to bottom, rgba(0, 6, 46, 0.668), rgba(0, 0, 0, 0.755)), url('/images/DSC_9333.JPG');
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-size: cover;
+  color: #fff;
+}
+
+.hero-gallery h1 {
+  font-size: 50px;
 }
 
 .hero img {
@@ -419,6 +434,36 @@ nav {
 .feature p {
   font-size: 16px;
   color: #555;
+}
+
+/* Gallery Section */
+#gallery {
+  padding: 2rem;
+  background-color: #f8f8f8;
+}
+
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  /* Creates responsive grid */
+  gap: 1.5rem;
+  justify-items: center;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.5);
+  cursor: pointer;
+  -webkit-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  -o-transform: scale(1.5);
 }
 
 /* SCHEDULE & PRICING SECTION */
