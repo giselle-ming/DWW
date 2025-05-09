@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+.schedule-pricing p {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
 /* Holiday Schedule */
 .holiday-schedule-section {
   padding: 40px;
