@@ -7,19 +7,19 @@
 /* Holiday Schedule */
 .holiday-schedule-section {
   padding: 40px;
-  background-color: #eafff1;
+  background-color: #fcffb3;
   text-align: center;
 }
 
 .holiday-schedule-section h2 {
   font-size: 36px;
-  color: #248000;
+  color: #ff6f00;
   padding-bottom: 10px;
   font-family: 'title';
 }
 
 .holiday-schedule-section h3 {
-  color: #248000;
+  color: #ff6f00;
   margin-bottom: 20px;
 }
 
@@ -112,7 +112,7 @@
 }
 
 .holiday-schedule-table th {
-  background-color: #ff7070;
+  background-color: #dd7e3f;
   color: white;
   font-size: 18px;
 }
@@ -147,6 +147,10 @@
   src: url('fonts/Shojumaru-Regular.ttf') format('woff');
   font-weight: normal;
   font-style: normal;
+}
+
+ul {
+  list-style-type: none;
 }
 
 .hero-carousel {
@@ -642,7 +646,7 @@ footer {
   }
 }
 
-@media (max-width: 60px) {
+@media (max-width: 600px) {
   .hero p {
     font-size: 16px;
     padding: 16px 10px;
