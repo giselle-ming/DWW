@@ -20,7 +20,7 @@
   font-size: 36px;
   color: #ff6f00;
   padding-bottom: 10px;
-  font-family: 'title';
+  font-family: "title";
 }
 
 .holiday-schedule-section h3 {
@@ -109,7 +109,7 @@
 #holiday-schedule {
   margin-top: 15px;
   padding: 10px 20px;
-  background-color: #007BFF;
+  background-color: #007bff;
   color: white;
   border: none;
   border-radius: 5px;
@@ -147,9 +147,40 @@
   background-color: #0056b3;
 }
 
+#anniversary .anniv-text h2 {
+  text-align: center;
+  margin: 0 0 12px;
+  width: 100%;
+}
+
+/* keep text block vertically centered next to images */
+#anniversary .anniversary-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  align-items: center;
+}
+#anniversary .anniv-text {
+  font-size: larger;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* smaller screens: stack and center text */
+@media (max-width: 800px) {
+  #anniversary .anniversary-grid {
+    grid-template-columns: 1fr;
+  }
+  #anniversary .anniv-text {
+    align-items: center;
+    text-align: center;
+  }
+}
+
 @font-face {
-  font-family: 'title';
-  src: url('fonts/Shojumaru-Regular.ttf') format('woff');
+  font-family: "title";
+  src: url("fonts/Shojumaru-Regular.ttf") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -266,7 +297,12 @@ nav {
 
 /* HERO SECTION */
 .hero {
-  background-image: linear-gradient(to bottom, rgba(0, 6, 46, 0.668), rgba(0, 0, 0, 0.755)), url('/images/DSC_9333.JPG');
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 6, 46, 0.668),
+      rgba(0, 0, 0, 0.755)
+    ),
+    url("/images/DSC_9333.JPG");
   height: 80vh;
   display: flex;
   justify-content: center;
@@ -277,7 +313,12 @@ nav {
 }
 
 .hero-gallery {
-  background-image: linear-gradient(to bottom, rgba(0, 6, 46, 0.668), rgba(0, 0, 0, 0.755)), url('/images/DSC_9333.JPG');
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 6, 46, 0.668),
+      rgba(0, 0, 0, 0.755)
+    ),
+    url("/images/DSC_9333.JPG");
   height: 60vh;
   display: flex;
   justify-content: center;
@@ -303,7 +344,7 @@ nav {
 }
 
 .hero h2 {
-  font-family: 'title';
+  font-family: "title";
   font-size: 24px;
 }
 
@@ -334,7 +375,7 @@ nav {
 }
 
 .programs h2 {
-  font-family: 'title';
+  font-family: "title";
   font-size: 36px;
   color: #0099cc;
 }
@@ -361,7 +402,7 @@ nav {
   font-size: 24px;
   margin: 10px 0;
   text-align: center;
-  font-family: 'title';
+  font-family: "title";
 }
 
 .program-card p {
@@ -384,6 +425,114 @@ nav {
   background-color: #0077a3;
 }
 
+.anniversary {
+  padding: 40px;
+  background-color: #b8e1fb;
+  text-align: center;
+}
+.anniversary h2 {
+  font-size: 36px;
+  color: #0099cc;
+  font-family: "title";
+}
+.anniversary .container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.anniversary-grid {
+  padding-top: 12px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  align-items: center;
+}
+.anniv-images {
+  position: relative;
+  width: 100%;
+  min-height: 400px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+.anniv-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+.anniv-slide.active {
+  opacity: 1;
+}
+.anniv-text {
+  padding: 0 12px;
+  text-align: left;
+}
+.anniv-text h2 {
+  text-align: center;
+  margin-bottom: 8px;
+}
+.anniv-text h3 {
+  margin-top: 0;
+  color: #444;
+  font-weight: 600;
+}
+.anniv-text p {
+  line-height: 1.5;
+  color: #333;
+}
+
+#anniversary .anniv-quote {
+  position: relative;
+  font-size: 1.125rem;
+  font-weight: 700;
+  font-style: italic;
+  line-height: 1.7;
+  color: #0f1724;
+  max-width: 760px;
+  min-height: 400px;
+  margin: 0 auto;
+  padding: 56px 28px 28px 48px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(15, 23, 36, 0.08);
+  border-left: 6px solid #0099cc;
+}
+
+/* large quote marks */
+#anniversary .anniv-quote::before,
+#anniversary .anniv-quote::after {
+  font-family: Georgia, "Times New Roman", serif;
+  color: rgba(0, 0, 0, 0.08);
+  font-size: 6rem;
+  line-height: 1;
+  position: absolute;
+  left: 10px;
+  top: -18px;
+  content: "“";
+  pointer-events: none;
+}
+
+#anniversary .anniv-quote .quote-author {
+  display: block;
+  margin-top: 12px;
+  text-align: right;
+  font-weight: 700;
+  color: #073d53;
+  font-style: normal;
+}
+
+@media (max-width: 800px) {
+  .anniversary-grid {
+    grid-template-columns: 1fr;
+  }
+  .anniv-text h2 {
+    font-size: 1.2rem;
+  }
+}
+
 /* FEATURES SECTION */
 .features {
   padding: 40px;
@@ -394,7 +543,7 @@ nav {
 .features h2 {
   font-size: 36px;
   color: #0099cc;
-  font-family: 'title';
+  font-family: "title";
 }
 
 .features h3 {
@@ -486,7 +635,7 @@ nav {
   font-size: 36px;
   color: #0099cc;
   padding-bottom: 10px;
-  font-family: 'title';
+  font-family: "title";
 }
 
 .schedule-pricing h3 {

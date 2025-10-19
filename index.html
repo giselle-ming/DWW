@@ -150,6 +150,47 @@
       </div>
     </section>
 
+    <section class="anniversary" id="anniversary">
+      <h2>ONE YEAR STRONG: FLY LIKE A DRAGON!</h2>
+      <h3>Celebrating 365 Days of Swimming, Growth, and Community!</h3>
+
+      <div class="container anniversary-grid">
+        <div class="anniv-images">
+          <img
+            src="images/anniversary1.jpeg"
+            class="anniv-slide active"
+            alt="Anniversary photo 1"
+          />
+          <img
+            src="images/anniversary2.jpeg"
+            class="anniv-slide"
+            alt="Anniversary photo 2"
+          />
+          <img
+            src="images/anniversary3.jpeg"
+            class="anniv-slide"
+            alt="Anniversary photo 3"
+          />
+          <img
+            src="images/anniversary4.jpeg"
+            class="anniv-slide"
+            alt="Anniversary photo 4"
+          />
+        </div>
+
+        <div class="anniv-text">
+          <blockquote class="anniv-quote">
+            It has been an incredible journey since our first class! We are
+            immensely grateful to our dedicated team, and most importantly, to
+            every single Dragonet, Pendragon, and Draco who has joined us in the
+            water. Your progress and passion are the heart of Dragon Water
+            Warriors. Thank you for making our first year a splash!
+            <p class="quote-author">— DWW Team</p>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
     <section class="schedule-pricing" id="schedule">
       <h2>Summer 2025 - Nepean Sportsplex</h2>
 
@@ -247,7 +288,7 @@
       </p>
     </section>
 
-    <section class="holiday-schedule-section" id="holiday-sch">
+    <!-- <section class="holiday-schedule-section" id="holiday-sch">
       <h2>🏊‍♂️ Summer Camp 2025 - PSP Pool</h2>
 
       <img
@@ -333,7 +374,7 @@
         Don’t miss your chance to be part of another unforgettable summer with
         the Dragon Water Warriors!
       </p>
-    </section>
+    </section> -->
 
     <footer>
       <div class="footer-container">
@@ -390,6 +431,24 @@
 
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
 
+    <script>
+      // simple slideshow: changes image every 10 seconds
+      (function () {
+        const slides = document.querySelectorAll(".anniv-slide");
+        if (!slides.length) return;
+        let i = 0;
+        function show(index) {
+          slides.forEach((s, idx) =>
+            s.classList.toggle("active", idx === index)
+          );
+        }
+        show(i);
+        setInterval(() => {
+          i = (i + 1) % slides.length;
+          show(i);
+        }, 10000);
+      })();
+    </script>
     <script src="map.js"></script>
   </body>
 </html>
