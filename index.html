@@ -1,122 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DWW</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    />
+    <link rel="icon" type="image/png" href="/images/swimming.png" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DWW</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
-  <link rel="icon" type="image/png" href="/images/swimming.png">
-</head>
-
-<body>
-  <header>
-  <div class="container">
-    <nav>
-      <div class="logo">
-        <h1>Dragon Water Warriors (DWW)</h1>
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <div class="logo">
+            <h1>Dragon Water Warriors (DWW)</h1>
+          </div>
+          <ul class="nav-links">
+            <li><a href="#programs">Groups</a></li>
+            <li><a href="#features">Why DWW?</a></li>
+            <li><a href="#schedule">Schedule</a></li>
+            <li><a href="#holiday-sch">PSP Camp</a></li>
+            <!-- <li><a href="gallery.html">Gallery</a></?li> -->
+          </ul>
+        </nav>
       </div>
-      <ul class="nav-links">
-        <li><a href="#programs">Groups</a></li>
-        <li><a href="#features">Why DWW?</a></li>
-        <li><a href="#schedule">Schedule</a></li>
-        <li><a href="#holiday-sch">PSP Camp</a></li>
-        <!-- <li><a href="gallery.html">Gallery</a></?li> -->
-      </ul>
-    </nav>
-    </div>
-  </header>
+    </header>
 
-  <section class="hero">
-    <div class="container">
-      <img src="/images/dww.png" alt="Dragon Water Warriors">
-      <p>Unlock your potential in the water with our expertly designed swimming programs! From beginners to advanced
-      swimmers, our classes cater to all ages and skill levels.</p>
-      <h2><span>Fly like a dragon</span></h2>
-    </div>
-  </section>
+    <section class="hero">
+      <div class="container">
+        <img src="/images/dww.png" alt="Dragon Water Warriors" />
+        <p>
+          Unlock your potential in the water with our expertly designed swimming
+          programs! From beginners to advanced swimmers, our classes cater to
+          all ages and skill levels.
+        </p>
+        <h2><span>Fly like a dragon</span></h2>
+      </div>
+    </section>
 
-  <section class="programs" id="programs">
-    <h2>Our Groups</h2>
-    <div class="programs-container">
-      <div class="program-card">
-        <img src="images/dragnets.jpeg">
-        <h3>Dragonets</h3>
-        <p>Dragonets are beginner swimmers who are just starting to learn the fundamentals of swimming. They focus on basic
-          water
-          safety, floating, and learning the elementary strokes like freestyle and backstroke. Dragonets are building
-          confidence
-          in the water and developing their basic swimming abilities.</p>
+    <section class="programs" id="programs">
+      <h2>Our Groups</h2>
+      <div class="programs-container">
+        <div class="program-card">
+          <img src="images/dragnets.jpeg" />
+          <h3>Dragonets</h3>
+          <p>
+            Dragonets are beginner swimmers who are just starting to learn the
+            fundamentals of swimming. They focus on basic water safety,
+            floating, and learning the elementary strokes like freestyle and
+            backstroke. Dragonets are building confidence in the water and
+            developing their basic swimming abilities.
+          </p>
+        </div>
+        <div class="program-card">
+          <img src="/images/pendragons.jpeg" />
+          <h3>Pendragons</h3>
+          <p>
+            Pendragons are intermediate-level swimmers who have a good grasp of
+            basic swimming strokes and techniques. They are comfortable swimming
+            longer distances and can perform more advanced drills. Pendragons
+            are still developing their endurance and speed but have a solid
+            foundation in swimming skills.
+          </p>
+        </div>
+        <div class="program-card">
+          <img src="/images/dracos.jpeg" />
+          <h3>Dracos</h3>
+          <p>
+            Dracos are the most advanced swimmers. Dracos have mastered all four
+            swimming strokes (freestyle, backstroke, breaststroke, and
+            butterfly) and demonstrate strong endurance, speed, and technique in
+            the water. They can perform complex swimming drills and have a deep
+            understanding of swim strategies and competition rules.
+          </p>
+        </div>
       </div>
-      <div class="program-card">
-        <img src="/images/pendragons.jpeg">
-        <h3>Pendragons</h3>
-        <p>Pendragons are intermediate-level swimmers who have a good grasp of basic swimming strokes and techniques. They are
-          comfortable swimming longer distances and can perform more advanced drills. Pendragons are still developing their
-          endurance and speed but have a solid foundation in swimming skills.</p>
-      </div>
-      <div class="program-card">
-        <img src="/images/dracos.jpeg">
-        <h3>Dracos</h3>
-        <p>Dracos are the most advanced swimmers. Dracos have mastered all four swimming strokes (freestyle, backstroke,
-        breaststroke, and butterfly) and demonstrate strong endurance, speed, and technique in the water. They can perform
-        complex swimming drills and have a deep understanding of swim strategies and competition rules.</p>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="features" id="features">
-    <h2>Dragon Water Warriors</h2>
-    <div class="features-text">
-        <h3>At DWW, we pride ourselves on offering a unique and enriching swimming experience for kids of all ages.</h3>
+    <section class="features" id="features">
+      <h2>Dragon Water Warriors</h2>
+      <div class="features-text">
+        <h3>
+          At DWW, we pride ourselves on offering a unique and enriching swimming
+          experience for kids of all ages.
+        </h3>
         <h3>Here’s what sets us apart:</h3>
-    </div>
-    <div class="features-container">
-      <div class="feature">
-        <img src="images/gallery/DSC_9407.JPG" alt="Comprehensive Skill Levels Icon">
-        <h4>Comprehensive Skill Levels</h4>
-        <p>Our classes are tailored to meet the needs of every swimmer, from the very first splash to advanced techniques. Whether
-        your child is a Dragonet learning the basics or a Draco perfecting their strokes, our structured levels ensure
-        personalized progress and development.</p>
       </div>
-      <div class="feature">
-        <img src="images/gallery/DSC_9397.JPG" alt="Flexibility Icon">
-        <h4>Experienced Instructor</h4>
-        <p>Our certified and experienced instructor is dedicated to providing high-quality instruction in a supportive and
-        encouraging environment. He focuses on refining techniques and building confidence, helping each child reach their full
-        potential.</p>
+      <div class="features-container">
+        <div class="feature">
+          <img
+            src="images/gallery/DSC_9407.JPG"
+            alt="Comprehensive Skill Levels Icon"
+          />
+          <h4>Comprehensive Skill Levels</h4>
+          <p>
+            Our classes are tailored to meet the needs of every swimmer, from
+            the very first splash to advanced techniques. Whether your child is
+            a Dragonet learning the basics or a Draco perfecting their strokes,
+            our structured levels ensure personalized progress and development.
+          </p>
+        </div>
+        <div class="feature">
+          <img src="images/gallery/DSC_9397.JPG" alt="Flexibility Icon" />
+          <h4>Experienced Instructor</h4>
+          <p>
+            Our certified and experienced instructor is dedicated to providing
+            high-quality instruction in a supportive and encouraging
+            environment. He focuses on refining techniques and building
+            confidence, helping each child reach their full potential.
+          </p>
+        </div>
+        <div class="feature">
+          <img src="images/gallery/DSC_9348.JPG" alt="Ratio Icon" />
+          <h4>Fun and Engaging Curriculum</h4>
+          <p>
+            We incorporate fun and engaging activities into our lessons to keep
+            kids motivated and excited about swimming. Our curriculum emphasizes
+            safety, technique, and enjoyment, making every class a memorable
+            experience.
+          </p>
+        </div>
+        <div class="feature">
+          <img src="images/sportplex.jpg" alt="Excellent Facilities Icon" />
+          <h4>Excellent Facilities</h4>
+          <p>
+            Our facility at Nepean SportSplex is equipped with modern amenities
+            and a safe, clean environment. We ensure that every class is
+            conducted in a setting that promotes learning and comfort.
+          </p>
+        </div>
+        <div class="feature">
+          <img src="images/water-fun-8782371_1280.JPG" alt="Feedback Icon" />
+          <h4>Focused on Personal Growth</h4>
+          <p>
+            Beyond swimming skills, we emphasize the development of personal
+            attributes such as perseverance, discipline, and teamwork. Our
+            approach nurtures not only strong swimmers but also well-rounded
+            individuals.
+          </p>
+        </div>
       </div>
-      <div class="feature">
-        <img src="images/gallery/DSC_9348.JPG" alt="Ratio Icon">
-        <h4>Fun and Engaging Curriculum</h4>
-        <p>We incorporate fun and engaging activities into our lessons to keep kids motivated and excited about swimming. Our
-        curriculum emphasizes safety, technique, and enjoyment, making every class a memorable experience.</p>
-      </div>
-      <div class="feature">
-        <img src="images/sportplex.jpg" alt="Excellent Facilities Icon">
-        <h4>Excellent Facilities</h4>
-        <p>Our facility at Nepean SportSplex is equipped with modern amenities and a safe, clean environment. We ensure that every
-        class is conducted in a setting that promotes learning and comfort.</p>
-      </div>
-      <div class="feature">
-        <img src="images/water-fun-8782371_1280.JPG" alt="Feedback Icon">
-        <h4>Focused on Personal Growth</h4>
-        <p>Beyond swimming skills, we emphasize the development of personal attributes such as perseverance, discipline, and
-        teamwork. Our approach nurtures not only strong swimmers but also well-rounded individuals.</p>
-      </div>
-    </div>
-  </section>
+    </section>
 
-<section class="schedule-pricing" id="schedule">
-  <h2>Summer 2025 - Nepean Sportsplex</h2>
+    <section class="schedule-pricing" id="schedule">
+      <h2>Summer 2025 - Nepean Sportsplex</h2>
 
-  <p><strong>📍 Location:</strong> Nepean Sportsplex</p>
-  <p><strong>🅿️ Free on-site parking available!</strong></p>
-  <p><strong>🗓 Dates:</strong> June 30 – August 15</p>
-  <p><strong>💵 Payment must be made in advance, once you confirm your schedule and receive your invoice.</strong></p>
-  <p><strong>📢 No class on July 7th</strong>.</p>
+      <p><strong>📍 Location:</strong> Nepean Sportsplex</p>
+      <p><strong>🅿️ Free on-site parking available!</strong></p>
+      <p><strong>🗓 Dates:</strong> June 30 – August 15</p>
+      <p>
+        <strong
+          >💵 Payment must be made in advance, once you confirm your schedule
+          and receive your invoice.</strong
+        >
+      </p>
+      <p><strong>📢 No class on July 7th</strong>.</p>
 
       <div class="schedule-container">
         <h3>Mondays & Fridays</h3>
@@ -141,7 +187,7 @@
             </tr>
           </tbody>
         </table>
-      
+
         <h3>Wednesdays</h3>
         <table class="schedule-table">
           <thead>
@@ -160,110 +206,157 @@
           </tbody>
         </table>
       </div>
-      
-      <a href="docs/Registration Details Sportsplex.pdf" download class="download-link">
+
+      <a
+        href="docs/Registration Details Sportsplex.pdf"
+        download
+        class="download-link"
+      >
         📄 Download detailed schedule & pricing
       </a>
-      
-      <p class="schedule-note"><strong>Note:</strong> No private sessions on Wednesdays. Spots are limited – register early to
-        secure your place!</p>
-      
+
+      <p class="schedule-note">
+        <strong>Note:</strong> No private sessions on Wednesdays. Spots are
+        limited – register early to secure your place!
+      </p>
+
       <p>
-        🏊 For Advanced swimmers, we recommend our other location:<br>
-        <strong>425 Breadner Blvd, Gloucester, ON (PSP Recreation Pool)</strong><br>
-        🅿️ Free parking available on-site.  </p>
+        🏊 For Advanced swimmers, we recommend our other location:<br />
+        <strong>425 Breadner Blvd, Gloucester, ON (PSP Recreation Pool)</strong
+        ><br />
+        🅿️ Free parking available on-site.
+      </p>
 
-  <p class="schedule-note" style="font-size: 18px;">
-    Note: All classes, whether private or group, are non-refundable and non-transferable. Missed classes cannot be
-    rescheduled or recovered.
+      <p class="schedule-note" style="font-size: 18px">
+        Note: All classes, whether private or group, are non-refundable and
+        non-transferable. Missed classes cannot be rescheduled or recovered. In
+        the event of pool maintenance or damage, affected classes will be
+        canceled. Rescheduling will only be possible if an alternative time slot
+        is available. We encourage you to plan accordingly.
+      </p>
 
-    In the event of pool maintenance or damage, affected classes will be canceled. Rescheduling will only be possible if
-    an alternative time slot is available. We encourage you to plan accordingly.
-  </p>
+      <p>
+        <strong
+          >We’re happy to offer a 10% family discount for all groups.</strong
+        >
+      </p>
 
-  <p><strong>We’re happy to offer a 10% family discount for all groups.</strong></p>
+      <p class="learning-tips">
+        The keys are "consistent practice, refining technique, building strength
+        and endurance in the water."
+      </p>
+    </section>
 
-  <p class="learning-tips">The keys are "consistent practice, refining technique, building strength and
-    endurance in the water."</p>
-</section>
+    <section class="holiday-schedule-section" id="holiday-sch">
+      <h2>🏊‍♂️ Summer Camp 2025 - PSP Pool</h2>
 
-<section class="holiday-schedule-section" id="holiday-sch">
-  <h2>🏊‍♂️ Summer Camp 2025 - PSP Pool</h2>
+      <img
+        src="images/summermodal.png"
+        alt="Summer Event"
+        class="holiday-image"
+      />
 
-  <img src="images/summermodal.png" alt="Summer Event" class="holiday-image">
-
-  <div class="camp-details">
-    <p><strong>📍 Location:</strong> 425 Breadner Blvd, Gloucester ON</p>
-    <p><strong>🅿️ Free on-site parking available!</strong></p>
-    <p><strong>🗓 Dates:</strong> June 17th – August 30th</p>
-    <p><strong>💵 Payment must be made in advance, once you confirm your schedule and receive your invoice.</strong></p>
-  </div>
-
-  <h3>📋 Camp Schedule & Pricing:</h3>
-  <table class="schedule-table">
-    <thead>
-      <tr>
-        <th>Program</th>
-        <th>Days</th>
-        <th>Sessions</th>
-        <th>Cost</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Full Program</td>
-        <td>Tuesdays, Thursdays, Saturdays</td>
-        <td>33</td>
-        <td>$810</td>
-      </tr>
-      <tr>
-        <td>2 Days/Week</td>
-        <td>Choose 2 (Tue/Thu/Sat)</td>
-        <td>22</td>
-        <td>$540</td>
-      </tr>
-      <tr>
-        <td>1 Day/Week</td>
-        <td>Choose 1 (Tue/Thu/Sat)</td>
-        <td>11</td>
-        <td>$270</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  <a href="docs/Registration Details PSP.pdf" download class="download-link">
-    📄 Download detailed camp schedule & pricing
-  </a>
-
-  <h3>🌿 Family-Friendly Extras:</h3>
-  <ul>
-    <li>🌳 Enjoy the green space around the facility for relaxation or play</li>
-    <li>💦 Let younger siblings have fun at the on-site water park during practice time</li>
-    <li>👨‍👩‍👧‍👦 <strong>Family Membership Discount:</strong> 10% off family discount!</li>
-  </ul>
-
-  <p>🛡️ <strong>Full Insurance:</strong> All participants are insured in and out of the water during sessions.</p>
-
-  <p class="learning-tips">
-    <strong>⚠️ Spots are limited!</strong><br>
-    Don’t miss your chance to be part of another unforgettable summer with the Dragon Water Warriors!
-  </p>
-</section>
-
-  <footer>
-    <div class="footer-container">
-      <!-- Left Section - Contact Info -->
-      <div class="footer-column">
-        <img src="images/dww.png" alt="Dragon Water Warriors Logo">
-        <ul>
-          <!-- <li><i class="fas fa-phone-alt"></i> (613) 123 1234</li> -->
-          <li><i class="fas fa-envelope"></i> enmanuel.manzanilla@dragonwaterwarriors.com</li>
-          <li>Nepean Sportsplex<br>1701 Woodroffe Ave, Ottawa, ON<br>Canada</li>
-          <li><i class="fas fa-info-circle"></i> Please send us an email ahead to request more information!</li>
-        </ul>
+      <div class="camp-details">
+        <p><strong>📍 Location:</strong> 425 Breadner Blvd, Gloucester ON</p>
+        <p><strong>🅿️ Free on-site parking available!</strong></p>
+        <p><strong>🗓 Dates:</strong> June 17th – August 30th</p>
+        <p>
+          <strong
+            >💵 Payment must be made in advance, once you confirm your schedule
+            and receive your invoice.</strong
+          >
+        </p>
       </div>
 
-      <!-- Middle Section - Our Location (Google Maps) -->
+      <h3>📋 Camp Schedule & Pricing:</h3>
+      <table class="schedule-table">
+        <thead>
+          <tr>
+            <th>Program</th>
+            <th>Days</th>
+            <th>Sessions</th>
+            <th>Cost</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Full Program</td>
+            <td>Tuesdays, Thursdays, Saturdays</td>
+            <td>33</td>
+            <td>$810</td>
+          </tr>
+          <tr>
+            <td>2 Days/Week</td>
+            <td>Choose 2 (Tue/Thu/Sat)</td>
+            <td>22</td>
+            <td>$540</td>
+          </tr>
+          <tr>
+            <td>1 Day/Week</td>
+            <td>Choose 1 (Tue/Thu/Sat)</td>
+            <td>11</td>
+            <td>$270</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <a
+        href="docs/Registration Details PSP.pdf"
+        download
+        class="download-link"
+      >
+        📄 Download detailed camp schedule & pricing
+      </a>
+
+      <h3>🌿 Family-Friendly Extras:</h3>
+      <ul>
+        <li>
+          🌳 Enjoy the green space around the facility for relaxation or play
+        </li>
+        <li>
+          💦 Let younger siblings have fun at the on-site water park during
+          practice time
+        </li>
+        <li>
+          👨‍👩‍👧‍👦 <strong>Family Membership Discount:</strong> 10% off family
+          discount!
+        </li>
+      </ul>
+
+      <p>
+        🛡️ <strong>Full Insurance:</strong> All participants are insured in and
+        out of the water during sessions.
+      </p>
+
+      <p class="learning-tips">
+        <strong>⚠️ Spots are limited!</strong><br />
+        Don’t miss your chance to be part of another unforgettable summer with
+        the Dragon Water Warriors!
+      </p>
+    </section>
+
+    <footer>
+      <div class="footer-container">
+        <!-- Left Section - Contact Info -->
+        <div class="footer-column">
+          <img src="images/dww.png" alt="Dragon Water Warriors Logo" />
+          <ul>
+            <!-- <li><i class="fas fa-phone-alt"></i> (613) 123 1234</li> -->
+            <li>
+              <i class="fas fa-envelope"></i>
+              enmanuel.manzanilla@dragonwaterwarriors.com
+            </li>
+            <li>
+              Nepean Sportsplex<br />1701 Woodroffe Ave, Ottawa, ON<br />Canada
+            </li>
+            <li>
+              <i class="fas fa-info-circle"></i> Please send us an email ahead
+              to request more information!
+            </li>
+          </ul>
+        </div>
+
+        <!-- Middle Section - Our Location (Google Maps) -->
         <div class="footer-column">
           <h4>Our Location</h4>
           <div id="mapid"></div>
@@ -272,30 +365,31 @@
         <div id="promo-modal" class="modal">
           <div class="modal-content">
             <span class="close">&times;</span>
-            <img src="images/summer.png" alt="Summer Camp image" class="promo-image">
+            <img
+              src="images/modaloct2025.png"
+              alt="October 2025 - Anniversary"
+              class="promo-image"
+            />
             <button id="holiday-schedule">More Info</button>
           </div>
         </div>
 
-
-      <!-- Right Section - Quick Links -->
-      <div class="footer-column">
-        <h4>Quick Links</h4>
-        <ul>
-          <li><a href="#programs">Groups</a></li>
-          <li><a href="#features">Why DWW?</a></li>
-          <li><a href="#schedule">Schedule</a></li>
-          <li><a href="#holiday-sch">PSP Camp</a></li>
-          <!-- <li><a href="gallery.html">Gallery</a></li> -->
-        </ul>
+        <!-- Right Section - Quick Links -->
+        <div class="footer-column">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#programs">Groups</a></li>
+            <li><a href="#features">Why DWW?</a></li>
+            <li><a href="#schedule">Schedule</a></li>
+            <li><a href="#holiday-sch">PSP Camp</a></li>
+            <!-- <li><a href="gallery.html">Gallery</a></li> -->
+          </ul>
+        </div>
       </div>
-    </div>
-  </footer>
+    </footer>
 
-  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
-  
-  <script src="map.js"></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
 
-</body>
-
+    <script src="map.js"></script>
+  </body>
 </html>
