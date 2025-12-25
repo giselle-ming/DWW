@@ -19,7 +19,7 @@ window.onload = function () {
   const viewScheduleBtn = document.getElementById("holiday-schedule");
 
   // Display the modal on page load
-  modal.style.display = "block";
+  //modal.style.display = "block";
 
   // Close the modal when clicking the close button
   closeBtn.onclick = function () {
