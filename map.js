@@ -16,10 +16,10 @@ marker
 window.onload = function () {
   const modal = document.getElementById("promo-modal");
   const closeBtn = document.querySelector(".close");
-  const viewScheduleBtn = document.getElementById("holiday-schedule");
+  const viewScheduleBtn = document.getElementById("more-info-btn");
 
   // Display the modal on page load
-  //modal.style.display = "block";
+  modal.style.display = "block";
 
   // Close the modal when clicking the close button
   closeBtn.onclick = function () {
@@ -36,7 +36,7 @@ window.onload = function () {
   // Scroll to the schedule section when clicking the button
   viewScheduleBtn.onclick = function () {
     document
-      .getElementById("anniversary")
+      .getElementById("summer-camp")
       .scrollIntoView({ behavior: "smooth" });
     modal.style.display = "none";
   };
