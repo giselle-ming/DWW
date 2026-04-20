@@ -73,6 +73,12 @@
   /* Ensure no internal scroll */
 }
 
+.modal-content p {
+  color: #ffffff;
+  font-size: 18px;
+  margin-top: 15px;
+}
+
 .close {
   position: absolute;
   top: 15px;
@@ -346,6 +352,71 @@ nav {
 .hero h2 {
   font-family: "title";
   font-size: 24px;
+}
+
+.page-top-image {
+  text-align: center;
+  padding: 20px 0 10px;
+}
+
+.page-top-image .top-page-image {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.about-intro,
+.about-section {
+  padding: 40px;
+  text-align: center;
+}
+
+.about-intro p,
+.about-section p,
+.about-section ul {
+  max-width: 860px;
+  margin: 0 auto 24px;
+  font-size: 18px;
+  line-height: 1.75;
+  color: #333;
+}
+
+.about-intro h2,
+.about-section h2 {
+  font-family: "title";
+  color: #0099cc;
+  font-size: 36px;
+  margin-bottom: 16px;
+}
+
+.about-section {
+  background-color: #f9f9f9;
+}
+
+.about-section ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.about-section ul li {
+  text-align: left;
+  margin: 10px auto;
+  padding-left: 28px;
+  position: relative;
+  max-width: 760px;
+}
+
+.about-section ul li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #0099cc;
+  font-weight: 700;
 }
 
 /* PROGRAMS SECTION */
