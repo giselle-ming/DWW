@@ -63,7 +63,7 @@
   top: 150px;
   border-radius: 10px;
   width: 80%;
-  max-width: 550px;
+  max-width: 800px;
   max-height: 90vh;
   /* Limit height to avoid scrolling */
   box-sizing: border-box;
@@ -81,11 +81,11 @@
 
 .close {
   position: absolute;
-  top: 15px;
-  right: 25px;
-  font-size: 40px;
-  font-weight: bold;
-  color: #ffffff;
+  top: 0;
+  right: 15px;
+  font-size: 50px;
+  font-weight: normal;
+  color: #0f0d0d;
   cursor: pointer;
 }
 
@@ -303,11 +303,8 @@ nav {
 
 /* HERO SECTION */
 .hero {
-  background-image: linear-gradient(
-      to bottom,
-      rgba(0, 6, 46, 0.668),
-      rgba(0, 0, 0, 0.755)
-    ),
+  background-image:
+    linear-gradient(to bottom, rgba(0, 6, 46, 0.668), rgba(0, 0, 0, 0.755)),
     url("/images/DSC_9333.JPG");
   height: 80vh;
   display: flex;
@@ -319,11 +316,8 @@ nav {
 }
 
 .hero-gallery {
-  background-image: linear-gradient(
-      to bottom,
-      rgba(0, 6, 46, 0.668),
-      rgba(0, 0, 0, 0.755)
-    ),
+  background-image:
+    linear-gradient(to bottom, rgba(0, 6, 46, 0.668), rgba(0, 0, 0, 0.755)),
     url("/images/DSC_9333.JPG");
   height: 60vh;
   display: flex;

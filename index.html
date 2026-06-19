@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -541,13 +541,12 @@
           <div class="modal-content">
             <span class="close">&times;</span>
             <img
-              src="images/competition.jpeg"
-              alt="Powerswim Skills Competition"
+              src="images/ssc.jpg"
+              alt="summer swim camp"
               class="promo-image"
             />
             <p>
-              For more information, please contact coach Enmanuel at
-              enmanuel.manzanilla@dragonwaterwarriors.com
+              <strong>Summer Swim Camp 2026 - June 30th to August 29th</strong>
             </p>
 
             <!-- button id="more-info-btn">More Info</button> -->
@@ -578,7 +577,7 @@
         let i = 0;
         function show(index) {
           slides.forEach((s, idx) =>
-            s.classList.toggle("active", idx === index)
+            s.classList.toggle("active", idx === index),
           );
         }
         show(i);
