@@ -12,7 +12,7 @@
 /* Holiday Schedule */
 .holiday-schedule-section {
   padding: 40px;
-  background-color: #fcffb3;
+  background: linear-gradient(180deg, #eaf7ff 0%, #dff3ff 100%);
   text-align: center;
 }
 
@@ -26,6 +26,72 @@
 .holiday-schedule-section h3 {
   color: #ff6f00;
   margin-bottom: 20px;
+}
+
+.event-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: 20px auto 30px;
+}
+
+.event-tab-button {
+  background-color: #fff;
+  color: #007aa8;
+  border: 2px solid #007aa8;
+  border-radius: 999px;
+  padding: 12px 24px;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.event-tab-button:hover,
+.event-tab-button.active {
+  background-color: #0099cc;
+  color: #fff;
+}
+
+.event-panel {
+  display: none;
+  text-align: left;
+}
+
+.event-panel.active {
+  display: block;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.camp-details {
+  text-align: center;
+}
+
+.camp-details h4 {
+  font-size: clamp(1.5rem, 2.5vw, 2rem);
+  line-height: 1.2;
+  margin-bottom: 12px;
+  color: #0b74a8;
+}
+
+.camp-details p {
+  font-size: 18px;
+  color: #073d53;
+  margin-bottom: 12px;
+}
+
+.camp-details ul {
+  list-style: none;
+  padding: 0;
+  margin: 8px 0 16px 0;
+}
+
+.camp-details ul li {
+  font-size: 16px;
+  color: #073d53;
+  margin: 6px 0;
 }
 
 .holiday-schedule-section p {
