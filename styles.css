@@ -10,17 +10,98 @@
 }
 
 /* Holiday Schedule */
+.announcements,
 .holiday-schedule-section {
   padding: 40px;
   background: linear-gradient(180deg, #eaf7ff 0%, #dff3ff 100%);
   text-align: center;
 }
 
+.announcements h2,
 .holiday-schedule-section h2 {
   font-size: 36px;
   color: #ff6f00;
   padding-bottom: 10px;
   font-family: "title";
+}
+
+.announcements .camp-details {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.announcements .camp-details p {
+  font-size: 20px;
+  line-height: 1.7;
+  color: #073d53;
+  margin-bottom: 16px;
+}
+
+.announcement-highlight {
+  background: linear-gradient(135deg, #fff8e1 0%, #ffe7a8 100%);
+  border: 2px solid #ffb703;
+  border-radius: 14px;
+  padding: 18px 20px;
+  box-shadow: 0 6px 18px rgba(255, 183, 3, 0.18);
+}
+
+.announcement-important {
+  background: #fff3f3;
+  border: 2px solid #d9534f;
+  border-radius: 12px;
+  padding: 16px 20px;
+  color: #7a1f1f;
+  font-weight: 700;
+}
+
+.instagram-link {
+  color: #007aa8;
+  font-weight: 800;
+  text-decoration: underline;
+}
+
+.instagram-link:hover {
+  color: #005f87;
+}
+
+.announcement-gallery {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(170px, 1fr));
+  gap: 18px;
+  margin: 24px auto 18px;
+  max-width: 1100px;
+}
+
+.announcement-gallery img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+  display: block;
+}
+
+@media (max-width: 900px) {
+  .announcement-gallery {
+    grid-template-columns: repeat(2, minmax(160px, 1fr));
+  }
+}
+
+@media (max-width: 520px) {
+  .announcement-gallery {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .announcement-gallery img {
+    height: 250px;
+  }
+}
+
+.announcement-note {
+  font-size: 18px;
+  font-style: italic;
 }
 
 .holiday-schedule-section h3 {
