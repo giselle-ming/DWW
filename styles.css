@@ -55,6 +55,15 @@
   font-weight: 700;
 }
 
+.thanksgiving-image {
+  display: block;
+  width: min(100%, 640px);
+  max-height: 420px;
+  object-fit: contain;
+  margin: 0 auto 24px;
+  border-radius: 12px;
+}
+
 .instagram-link {
   color: #007aa8;
   font-weight: 800;
