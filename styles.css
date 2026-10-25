@@ -46,6 +46,10 @@
   box-shadow: 0 6px 18px rgba(255, 183, 3, 0.18);
 }
 
+.announcements .camp-details > article.announcement-highlight {
+  margin-bottom: 20px;
+}
+
 .announcement-important {
   background: #fff3f3;
   border: 2px solid #d9534f;
